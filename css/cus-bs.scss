@@ -1,0 +1,17 @@
+$theme-colors: (
+  "primary": #1a129f,
+  "danger": #fb249f,
+  "success": #43b943,
+  "secondary": #7e76f9,
+  "warning": #eab302,
+);
+// .btn {
+// border-radius: 2rem !important;
+// padding: 0.375rem 1.5rem !important;
+// }
+// .rounded{
+//   border-radius: ;
+// }
+$btn-padding-x: 1.5rem;
+$border-radius: 1.1rem;
+@import "../node_modules/bootstrap/scss/bootstrap";
