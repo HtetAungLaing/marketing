@@ -70,15 +70,15 @@ li.slick-active {
   border: 8px solid #1a129f;
 }
 .footer {
-  height: 70vh;
+  height: 75vh;
   background-image: url("../img/f1.svg"), url("../img/footer-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 250px;
 }
 .f-wrap {
-  height: 30vh;
-  margin-top: 50px;
+  height: 20vh;
+  margin-top: 10px;
 }
 @media screen and (max-width: 576px) {
   .sec-img {
@@ -89,6 +89,9 @@ li.slick-active {
   }
   .card-para {
     height: 100px;
+  }
+  .f-wrap {
+    margin-top: 43px;
   }
   .footer {
     height: 140vh;
