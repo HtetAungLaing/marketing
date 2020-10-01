@@ -3,6 +3,9 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: #70707015;
 }
@@ -16,9 +19,47 @@ body {
 }
 .navi {
   position: absolute;
-  left: 0;
+  top: 0;
   z-index: 100;
-  width: 100%;
+}
+.cus{
+  margin-top: -100px;
+}
+.resnav{
+  position: fixed;
+  backdrop-filter: blur(10px);
+}
+.resnav .nav-link{
+  color:  #1a129f !important;
+}
+.resnav .nav-link:hover{
+  color: #000000 !important;
+}
+.part-1{
+  position: relative;
+}
+.social-bar{
+  position: absolute;
+  bottom: 37%;
+  left: -5%;
+}
+.scroll-mouse{
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.45) !important;
+}
+.scroll-mouse a{
+  text-align: center;
+}
+.scroll-mouse img{
+  width: 77%;
 }
 .home {
   background-image: url("../img/bg-shape.svg");
@@ -65,24 +106,71 @@ body {
   background-color: transparent;
   border: 0.5px solid #1a129f;
 }
+.slick-dots li button:before{
+  content: '' !important;
+}
 li.slick-active {
   background-color: #1a129f;
   border: 8px solid #1a129f;
 }
 .footer {
   height: 75vh;
-  background-image: url("../img/f1.svg"), url("../img/footer-2.svg");
+  background-image: url("../img/footer-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 250px;
+  margin-top: -200px;
 }
 .f-wrap {
   height: 20vh;
   margin-top: 10px;
 }
+.navbar-toggler{
+  border: none;
+}
+.show{
+  backdrop-filter: blur(15px);
+}
+
+.navbar-toggler:focus{
+  outline: none;
+}
+.ani1{
+  animation-delay: 0.5s;
+}
+.ani2{
+  animation-delay: 0.9s;
+}
+.ani3{
+  animation-delay: 1.3s;
+}
+.ani4{
+  animation-delay:1.72s;
+}
 @media screen and (max-width: 576px) {
+  
+  .navbar-nav{
+    display: flex;
+    justify-content: center !important;
+    backdrop-filter: blur(10px) !important;
+  }
+  .nav-link{
+    color: #1a129f !important;
+    margin-left: 25px !important;
+  }
   .sec-img {
     width: 90%;
+  }
+  .scroll-mouse{
+    position: absolute;
+    left: auto;
+    right: 20px;
+    bottom: 10px;
+  }
+  .social-bar{
+    left: auto;
+    right: 30px;
+    bottom: 206px;
   }
   .service .card {
     height: 320px;
@@ -91,11 +179,11 @@ li.slick-active {
     height: 100px;
   }
   .f-wrap {
-    margin-top: 60px;
+    margin-top: 100px;
   }
   .footer {
     height: 150vh;
-    margin-top: -285px;
+    margin-top: -390px;
     padding-top: 300px;
     background-size: cover;
     background-position: top center;

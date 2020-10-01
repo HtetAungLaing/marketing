@@ -14,4 +14,10 @@ $theme-colors: (
 // }
 $btn-padding-x: 1.5rem;
 $border-radius: 1.1rem;
+.navbar-dark .nav-link{
+  color: rgba(255, 255, 255, 0.822) !important;
+}
+.navbar-dark .nav-link:hover{
+  color: #ffffff !important;
+}
 @import "../node_modules/bootstrap/scss/bootstrap";

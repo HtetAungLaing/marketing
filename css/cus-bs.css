@@ -1,3 +1,11 @@
+.navbar-dark .nav-link {
+  color: rgba(255, 255, 255, 0.822);
+}
+
+.navbar-dark .nav-link:hover {
+  color: #ffffff !important;
+}
+
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
