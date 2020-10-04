@@ -14,6 +14,7 @@
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "style.css": "^1.0.0",
+    "waypoints": "^4.0.1",
     "wow.js": "^1.2.2"
   }
 }

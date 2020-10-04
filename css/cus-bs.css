@@ -1,9 +1,9 @@
-.navbar-dark .nav-link {
-  color: rgba(255, 255, 255, 0.822);
+.nav-link {
+  color: #1a129f !important;
 }
 
 .navbar-dark .nav-link:hover {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 /*!

@@ -21,17 +21,22 @@ body {
   position: absolute;
   top: 0;
   z-index: 100;
+  transition:  top 0.4s;
+  position: fixed;
+  backdrop-filter: blur(8px);    
+  background-color: #dbdaf4b3;
+  animation: resnav linear 0.5s;
 }
 .cus{
   margin-top: -100px;
 }
 .resnav{
   position: fixed;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);    
+  background-color: #dbdaf4b3;
+  animation: resnav linear 0.5s;
 }
-.resnav .nav-link{
-  color:  #1a129f !important;
-}
+
 .resnav .nav-link:hover{
   color: #000000 !important;
 }
@@ -147,12 +152,21 @@ li.slick-active {
 .ani4{
   animation-delay:1.72s;
 }
+.indicator{
+  border-bottom: 3px solid #1a129f;
+}
+@keyframes resnav{
+  from{top: -5%;}
+  to{top: 0%;}
+}
 @media screen and (max-width: 576px) {
-  
+  .indicator{
+    border-bottom: 1px solid #1a129f;
+  }
   .navbar-nav{
     display: flex;
     justify-content: center !important;
-    backdrop-filter: blur(10px) !important;
+    /* backdrop-filter: blur(10px) !important; */
   }
   .nav-link{
     color: #1a129f !important;
@@ -187,5 +201,9 @@ li.slick-active {
     padding-top: 300px;
     background-size: cover;
     background-position: top center;
+  }
+  .nav-link{
+    width: 20%;
+    text-align: center;
   }
 }
