@@ -10,7 +10,6 @@ $(window).scroll(function () {
         $('.navi').css('top', '-250px')
     }
     prevpos = currentPosition;
-    // console.log(currentPosition);
     let screenHeight = $(window).height();
     if (currentPosition >= screenHeight - 200) {
         // $('.navi').addClass('resnav');
