@@ -46,7 +46,7 @@ body {
 .social-bar{
   position: absolute;
   bottom: 37%;
-  left: -5%;
+  left: 10%;
 }
 .scroll-mouse{
   position: absolute;
@@ -166,7 +166,7 @@ li.slick-active {
   .navbar-nav{
     display: flex;
     justify-content: center !important;
-    /* backdrop-filter: blur(10px) !important; */
+    backdrop-filter: blur(12px) !important;
   }
   .nav-link{
     color: #1a129f !important;

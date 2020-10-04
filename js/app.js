@@ -1,6 +1,3 @@
-$(window).on('load', function () {
-    $('.loadc').fadeOut(500);
-})
 let prevpos = $(window).scrollTop();
 $(window).scroll(function () {
     let currentPosition = $(this).scrollTop();
